@@ -3,7 +3,7 @@
 unprinted_designs = ['phone case', 'robot pedant', 'dodecahedron']
 completed_models = []
 
-#Цикл последовательно печчатает каждую модель до конца списка.
+#Цикл последовательно печатает каждую модель до конца списка.
 #После печати каждая модель перемещается в список completed_models.
 
 while unprinted_designs:
