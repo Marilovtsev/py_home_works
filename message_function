@@ -1,6 +1,18 @@
-def show_messages(printed_messages):
-    print(printed_messages)
+# def show_messages(printed_messages):
+#     print(printed_messages)
+#
+#
+# messages = ['Mass Effect 1', 'Mass Effect 2', 'Mass Effect 3']
+# show_messages(messages)
+
+def send_messages(printed_messages, sent_messages):
+    while printed_messages:
+        current_messages = printed_messages.pop()
+        print(f"Output messages: {current_messages}")
+        sent_messages.append(current_messages)
 
 
-messages = ['Mass Effect 1', 'Mass Effect 2', 'Mass Effect 3']
-show_messages(messages)
+printed_messages = ['Mass Effect 1', 'Mass Effect 2', 'Mass Effect 3']
+sent_messages = []
+send_messages(printed_messages, sent_messages)
+
