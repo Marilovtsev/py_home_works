@@ -15,4 +15,4 @@ def send_messages(printed_messages, sent_messages):
 printed_messages = ['Mass Effect 1', 'Mass Effect 2', 'Mass Effect 3']
 sent_messages = []
 send_messages(printed_messages, sent_messages)
-
+print(f"printed_messages: {printed_messages}, sent_messages: {sent_messages}")
