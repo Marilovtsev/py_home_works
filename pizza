@@ -1,6 +1,8 @@
 def make_pizza(*topings):
-    """Вывод списка заказанных топпингов."""
-    print(topings)
+    """Выводит описание пиццы."""
+    print("\nMaking a pizza with the folowing toppings:")
+    for toping in topings:
+        print(f'- {toping}')
 
 
 make_pizza('pepperoni')
