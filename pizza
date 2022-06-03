@@ -1,0 +1,7 @@
+def make_pizza(*topings):
+    """Вывод списка заказанных топпингов."""
+    print(topings)
+
+
+make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
