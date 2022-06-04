@@ -1,0 +1,9 @@
+def make_burger(allow, *components):
+    print(f"\nMaking a {allow}-ich burger with the folowing components:")
+    for component in components:
+        print(f'- {component}')
+
+
+make_burger(4, 'meat', 'cheese')
+make_burger(2, 'cucumber', 'tomato')
+make_burger(3, 'chicken', 'potato')
