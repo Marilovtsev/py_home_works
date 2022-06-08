@@ -3,7 +3,3 @@ def make_pizza(size, *topings):
     print(f"\nMaking a {size}-ich pizza with the folowing toppings:")
     for toping in topings:
         print(f'- {toping}')
-
-
-# make_pizza(16, 'pepperoni')
-# make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
