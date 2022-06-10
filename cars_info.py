@@ -1,3 +1,2 @@
-from cars_functions import make_car as mc
-
-mc('subaru', 'outback', color='blue', tow_package=True)
+import cars_functions as cf
+cf.make_car('subaru', 'outback', color='blue', tow_package=True)
