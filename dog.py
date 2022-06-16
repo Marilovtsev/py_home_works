@@ -15,7 +15,7 @@ class Dog():
         print(f"{self.name} rolled over!")
 
 
-my_dog = Dog('willie', 6)
+my_dog = Dog('Willie', 6)
 my_dog.sit()
 my_dog.roll_over()
 
