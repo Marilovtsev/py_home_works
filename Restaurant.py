@@ -4,13 +4,17 @@ class Restaurant():
         self.cuisine_type = cuisine_type
 
     def describe_restaurant(self):
-        print(f"{self.restaurant_name}, {self.cuisine_type}")
+        print(f"\n{self.restaurant_name}, {self.cuisine_type}")
 
     def open_restaurant(self):
         print(f"Today the {self.restaurant_name} with {self.cuisine_type} is open!")
 
 
 my_restaurant = Restaurant("Traktor Burger", "BBQ")
+restaurant = Restaurant("Buffet", "Family kitchen")
 
 my_restaurant.describe_restaurant()
 my_restaurant.open_restaurant()
+
+restaurant.describe_restaurant()
+restaurant.open_restaurant()
