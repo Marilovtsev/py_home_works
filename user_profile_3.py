@@ -5,3 +5,8 @@ class User():
         self.age = age
         self.email = email
 
+    def describe_user(self):
+        print(f"First name: {self.first_name}"
+              f"Last name: {self.last_name}"
+              f"Age: {self.age}"
+              f"Email: {self.email}")
