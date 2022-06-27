@@ -6,7 +6,7 @@ class User():
         self.email = email
 
     def describe_user(self):
-        print(f"First name: {self.first_name}"
+        print(f"\nFirst name: {self.first_name}"
               f"\nLast name: {self.last_name}"
               f"\nAge: {self.age}"
               f"\nEmail: {self.email}")
@@ -16,3 +16,6 @@ user_1 = User("John", "Shepard", 27, "shepard@normandy.com")
 user_2 = User("Liara", "T'shoni", 435, "liara@normandy.com")
 user_3 = User("Garrus", "Vakarian", 112, "garrus@normandy.com")
 
+user_1.describe_user()
+user_2.describe_user()
+user_3.describe_user()
