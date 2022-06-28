@@ -11,3 +11,6 @@ class Car():
         """Возвращает аккуратно отформатированное оптсание"""
         long_name = f"{self.year} {self.manufacturer} {self.model}"
         return long_name.title()
+
+my_new_car = Car('audi', 'a4', 2019)
+print(my_new_car.get_descriptive_name())
