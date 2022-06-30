@@ -27,8 +27,14 @@ class Car():
         else:
             print("You can't roll back an odometer!")
 
+    def increment_odometer(self, miles):
+        """Увеличивает показания одометра с заданым приращиванием."""
+        self.odometer_reading += miles
 
-my_new_car = Car('audi', 'a4', 2019)
-print(my_new_car.get_descriptive_name())
-my_new_car.update_odometer(23)
-my_new_car.read_odometer()
+
+
+
+# my_new_car = Car('audi', 'a4', 2019)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.update_odometer(23)
+# my_new_car.read_odometer()
