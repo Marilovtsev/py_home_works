@@ -29,3 +29,6 @@ pyana_vishnya_info = Restaurant("Pyana Vishnya", "Vine bar")
 # nikos_info.describe_restaurant()
 # fat_gouse_info.describe_restaurant()
 # pyana_vishnya_info.describe_restaurant()
+
+restaurant.number_served = 20
+restaurant.check_number_served()
