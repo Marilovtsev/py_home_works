@@ -21,6 +21,9 @@ class User():
     def increment_login_attempts(self, number):
         self.login_attempts = number
 
+    def reset_login_attempts(self):
+        self.login_attempts = 0
+
 
 user_1 = User("John", "Shepard", 27, "shepard@normandy.com")
 user_2 = User("Liara", "T'Soni", 435, "liara@normandy.com")
@@ -36,3 +39,7 @@ user_1.greet_user()
 
 user_1.login_attempts = 1
 user_1.greet_user()
+
+user_1.reset_login_attempts()
+user_1.greet_user()
+
