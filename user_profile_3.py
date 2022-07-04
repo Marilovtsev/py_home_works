@@ -4,6 +4,7 @@ class User():
         self.last_name = last_name
         self.age = age
         self.email = email
+        self.login_attempts = 0
 
     def describe_user(self):
         print(f"\nFirst name: {self.first_name}"
@@ -14,7 +15,11 @@ class User():
     def greet_user(self):
         print(f"\nWelcome to the Normandy, {self.first_name} {self.last_name}!"
               f"\nYour personal email for communication: {self.email}"
-              f"\nAt the time of registration in the ship's system, your age is {self.age} years.")
+              f"\nAt the time of registration in the ship's system, your age is {self.age} years."
+              f"\nLogin attempts: {self.login_attempts}")
+
+    def increment_login_attempts(self, number):
+        self.login_attempts = number
 
 
 user_1 = User("John", "Shepard", 27, "shepard@normandy.com")
@@ -26,6 +31,8 @@ user_3 = User("Garrus", "Vakarian", 112, "garrus@normandy.com")
 # user_3.describe_user()
 
 user_1.greet_user()
-user_2.greet_user()
-user_3.greet_user()
+# user_2.greet_user()
+# user_3.greet_user()
 
+user_1.login_attempts = 1
+user_1.greet_user()
