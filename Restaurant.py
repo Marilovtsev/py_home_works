@@ -2,12 +2,16 @@ class Restaurant():
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = 0
 
     def describe_restaurant(self):
         print(f"\n{self.restaurant_name}, {self.cuisine_type}")
 
     def open_restaurant(self):
         print(f"Today the {self.restaurant_name} with {self.cuisine_type} is open!")
+
+    def check_number_served(self):
+        print(f"Number served: {self.number_served}")
 
 
 my_restaurant = Restaurant("Traktor Burger", "BBQ")
@@ -22,6 +26,6 @@ pyana_vishnya_info = Restaurant("Pyana Vishnya", "Vine bar")
 # restaurant.describe_restaurant()
 # restaurant.open_restaurant()
 
-nikos_info.describe_restaurant()
-fat_gouse_info.describe_restaurant()
-pyana_vishnya_info.describe_restaurant()
+# nikos_info.describe_restaurant()
+# fat_gouse_info.describe_restaurant()
+# pyana_vishnya_info.describe_restaurant()
