@@ -16,6 +16,9 @@ class Restaurant():
     def set_number_served(self, numbers):
         self.number_served = numbers
 
+    def increment_number_served(self, guests):
+        self.number_served += guests
+
 
 my_restaurant = Restaurant("Traktor Burger", "BBQ")
 restaurant = Restaurant("Buffet", "Family kitchen")
@@ -33,7 +36,11 @@ pyana_vishnya_info = Restaurant("Pyana Vishnya", "Vine bar")
 # fat_gouse_info.describe_restaurant()
 # pyana_vishnya_info.describe_restaurant()
 
-# restaurant.number_served = 20
+restaurant.number_served = 20
+restaurant.check_number_served()
 
 restaurant.set_number_served(15)
+restaurant.check_number_served()
+
+restaurant.increment_number_served(69)
 restaurant.check_number_served()
