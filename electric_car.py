@@ -31,7 +31,10 @@ class Car():
         """Увеличивает показания одометра с заданым приращиванием."""
         self.odometer_reading += miles
 
+
 class ElectricCar(Car):
     """представляет аспекты машины, спецефические для электромобилей."""
 
-
+    def __init__(self, make, model, year):
+        """Инициализирует атрибуты класса-родителя."""
+        super().__init__(make, model, year)
