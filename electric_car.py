@@ -31,6 +31,16 @@ class Car():
         """Увеличивает показания одометра с заданым приращиванием."""
         self.odometer_reading += miles
 
+class Battery():
+    """Простая модель аккумулятора электромобиля"""
+
+    def __init__(self, battery_size=75):
+        """Инициализирует атрибудты аккумулятора"""
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """Выводит информацию о мощности аккумулятора."""
+        print(f"This car has a {self.battery_size}-kWh battery.")
 
 class ElectricCar(Car):
     """представляет аспекты машины, спецефические для электромобилей."""
