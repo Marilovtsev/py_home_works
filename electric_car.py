@@ -49,7 +49,7 @@ class ElectricCar(Car):
         """Инициализирует атрибуты класса-родителя.
         Затем инициализирует атрибуты, специфические для автомобиля."""
         super().__init__(make, model, year)
-        self.battery_size = 75
+        self.battery = Battery()
 
     def describe_battery(self):
         """Выводит информацию о мощности аккумулятора."""
