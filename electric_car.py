@@ -31,6 +31,7 @@ class Car():
         """Увеличивает показания одометра с заданым приращиванием."""
         self.odometer_reading += miles
 
+
 class Battery():
     """Простая модель аккумулятора электромобиля"""
 
@@ -42,6 +43,7 @@ class Battery():
         """Выводит информацию о мощности аккумулятора."""
         print(f"This car has a {self.battery_size}-kWh battery.")
 
+
 class ElectricCar(Car):
     """представляет аспекты машины, спецефические для электромобилей."""
 
@@ -51,9 +53,9 @@ class ElectricCar(Car):
         super().__init__(make, model, year)
         self.battery = Battery()
 
-    def describe_battery(self):
-        """Выводит информацию о мощности аккумулятора."""
-        print(f"This car has a {self.battery_size}-kWh battery.")
+    # def describe_battery(self):
+    #     """Выводит информацию о мощности аккумулятора."""
+    #     print(f"This car has a {self.battery_size}-kWh battery.")
 
     def fill_gas_tank(self):
         """У электромобилей нет бензобака."""
