@@ -20,11 +20,16 @@ class Restaurant():
         self.number_served += guests
 
 
+class IceCreamStand:
+    def __init__(self, flavors):
+        self.flavors = flavors
+
+
 my_restaurant = Restaurant("Traktor Burger", "BBQ")
-restaurant = Restaurant("Buffet", "Family kitchen")
-nikos_info = Restaurant("Nikos", "Gastro & Bar")
-fat_gouse_info = Restaurant("Fat Gouse Pab", "Beer pub")
-pyana_vishnya_info = Restaurant("Pyana Vishnya", "Vine bar")
+# restaurant = Restaurant("Buffet", "Family kitchen")
+# nikos_info = Restaurant("Nikos", "Gastro & Bar")
+# fat_gouse_info = Restaurant("Fat Gouse Pab", "Beer pub")
+# pyana_vishnya_info = Restaurant("Pyana Vishnya", "Vine bar")
 
 # my_restaurant.describe_restaurant()
 # my_restaurant.open_restaurant()
