@@ -24,6 +24,12 @@ class User():
     def reset_login_attempts(self):
         self.login_attempts = 0
 
+class Admin(User):
+    def __init__(self, first_name, last_name, age, email):
+        super().__init__(first_name, last_name, age, email)
+
+
+
 
 user_1 = User("John", "Shepard", 27, "shepard@normandy.com")
 user_2 = User("Liara", "T'Soni", 435, "liara@normandy.com")
