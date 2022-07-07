@@ -5,7 +5,9 @@ class Restaurant:
         self.number_served = 0
 
     def describe_restaurant(self):
-        print(f"\n{self.restaurant_name}, {self.cuisine_type}")
+        restourant_name = f"\n{self.restaurant_name}, {self.cuisine_type}"
+        return restourant_name.title()
+        # print(f"\n{self.restaurant_name}, {self.cuisine_type}")
 
     def open_restaurant(self):
         print(f"Today the {self.restaurant_name} with {self.cuisine_type} is open!")
@@ -26,12 +28,13 @@ class IceCreamStand(Restaurant):
         self.flavors = 0
 
     def show_icecream(self):
-        print(f"We can propose these icecream: {self.flavors}")
+        print(f"We can propose these ice-creams: {self.flavors}")
 
 
-
-
-
+icecream_stand = IceCreamStand('Zori', 'Family cuisine')
+print(icecream_stand.describe_restaurant())
+icecream_stand.flavors = 'Vanilla', 'Cola'
+icecream_stand.show_icecream()
 
 # my_restaurant = Restaurant("Traktor Burger", "BBQ")
 # my_restaurant.describe_restaurant()
@@ -49,8 +52,8 @@ class IceCreamStand(Restaurant):
 # fat_goose_info.describe_restaurant()
 # pyana_vishnya_info.describe_restaurant()
 
-my_restaurant.number_served = 20
-my_restaurant.check_number_served()
+# my_restaurant.number_served = 20
+# my_restaurant.check_number_served()
 
 # restaurant.set_number_served(15)
 # restaurant.check_number_served()
