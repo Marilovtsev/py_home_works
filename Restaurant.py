@@ -24,6 +24,9 @@ class IceCreamStand:
     def __init__(self, flavors):
         self.flavors = flavors
 
+    def show_IceCream(self):
+        print(f"We can propose these icecream: {self.flavors}")
+
 
 my_restaurant = Restaurant("Traktor Burger", "BBQ")
 # restaurant = Restaurant("Buffet", "Family kitchen")
