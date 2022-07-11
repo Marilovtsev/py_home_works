@@ -25,15 +25,19 @@ class Restaurant:
 class IceCreamStand(Restaurant):
     def __init__(self, restaurant_name, cuisine_type):
         super().__init__(restaurant_name, cuisine_type)
-        self.flavors = 0
+        self.flavors = []
 
     def show_icecream(self):
-        print(f"We can propose these ice-creams: {self.flavors}")
+        print("\nWe have the following flavors available:")
+        for flavor in self.flavors:
+            print("- " + flavor.title())
 
 
 icecream_stand = IceCreamStand('Zori', 'Family cuisine')
-print(icecream_stand.describe_restaurant())
-icecream_stand.flavors = 'Vanilla', 'Cola'
+# print(icecream_stand.describe_restaurant())
+icecream_stand.flavors = ['vanilla', 'chocolate', 'black cherry']
+
+icecream_stand.describe_restaurant()
 icecream_stand.show_icecream()
 
 # my_restaurant = Restaurant("Traktor Burger", "BBQ")
