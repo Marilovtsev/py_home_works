@@ -1,4 +1,4 @@
-class User():
+class User:
     def __init__(self, first_name, last_name, age, email):
         self.first_name = first_name
         self.last_name = last_name
@@ -25,19 +25,29 @@ class User():
         self.login_attempts = 0
 
 
-class Admin(User):
-    def __init__(self, first_name, last_name, age, email):
-        super().__init__(first_name, last_name, age, email)
+class Privileges():
+    def __init__(self, privileges=''):
+        self.privileges = privileges
 
-    def show_privileges(self, privileges):
+    def show_privileges(self):
         self.privileges = ['разрешено добавлять сообщения',
                            'разрешено удалять пользователей',
                            'разрешено банить пользователей']
-        print(self.privileges)
+
+        for priveleg in self.privileges:
+            print(priveleg)
+
+
+class Admin(User):
+    privileges = Privileges()
+
+    def __init__(self, first_name, last_name, age, email):
+        super().__init__(first_name, last_name, age, email)
 
 
 admin = Admin("John", "Shepard", 27, "shepard@normandy.com")
-admin.show_privileges(privileges=())
+admin.describe_user()
+admin.privileges.show_privileges()
 
 # user_1 = User("John", "Shepard", 27, "shepard@normandy.com")
 # user_2 = User("Liara", "T'Soni", 435, "liara@normandy.com")
