@@ -1,4 +1,4 @@
-from car import ElectricCar
+from electric_car import ElectricCar
 
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 
