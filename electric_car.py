@@ -48,14 +48,14 @@ class ElectricCar(Car):
         print("This car doesn't need a gas tank!")
 
 
-print("Make an electric car, and check the battery:")
-my_tesla = ElectricCar('tesla', 'model s', 2016)
-my_tesla.battery.describe_battery()
-
-print("\nUpgrade the battery, and check it again:")
-my_tesla.battery.upgrade_battery()
-my_tesla.battery.describe_battery()
-
-print("\nTry upgrading the battery a second time.")
-my_tesla.battery.upgrade_battery()
-my_tesla.battery.describe_battery()
+# print("Make an electric car, and check the battery:")
+# my_tesla = ElectricCar('tesla', 'model s', 2016)
+# my_tesla.battery.describe_battery()
+#
+# print("\nUpgrade the battery, and check it again:")
+# my_tesla.battery.upgrade_battery()
+# my_tesla.battery.describe_battery()
+#
+# print("\nTry upgrading the battery a second time.")
+# my_tesla.battery.upgrade_battery()
+# my_tesla.battery.describe_battery()
