@@ -80,7 +80,6 @@ class ElectricCar(Car):
         """У электромобилей нет бензобака."""
         print("This car doesn't need a gas tank!")
 
-
 # my_used_car = Car('subaru', 'outback', 2015)
 # print(my_used_car.get_descriptive_name())
 #
