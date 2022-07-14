@@ -8,7 +8,7 @@ class Restaurant:
         self.number_served = 0
 
     def describe_restaurant(self):
-        msg = self.restaurant_name + " serves wonderful " + self.cuisine_type + "."
+        msg = self.restaurant_name + " serves make a wonderful " + self.cuisine_type + "."
         print("\n" + msg)
 
     def open_restaurant(self):
@@ -20,8 +20,8 @@ class Restaurant:
     def set_number_served(self, numbers):
         self.number_served = numbers
 
-    # def increment_number_served(self, guests):
-    #     self.number_served += guests
+    def increment_number_served(self, guests):
+        self.number_served += guests
 
 
 # class IceCreamStand(Restaurant):
@@ -41,26 +41,26 @@ class Restaurant:
 #
 # # icecream_stand.describe_restaurant()
 # icecream_stand.show_icecream()
-
+#
 # my_restaurant = Restaurant("Traktor Burger", "BBQ")
 # my_restaurant.describe_restaurant()
 # my_restaurant.open_restaurant()
-
+#
 # restaurant = Restaurant("Buffet", "Family kitchen")
 # nikos_info = Restaurant("Nikos", "Gastro & Bar")
 # fat_goose_info = Restaurant("Fat Goose Pab", "Beer pub")
 # pyana_vishnya_info = Restaurant("Pyana Vishnya", "Vine bar")
-
+#
 # restaurant.describe_restaurant()
 # restaurant.open_restaurant()
-
+#
 # nikos_info.describe_restaurant()
 # fat_goose_info.describe_restaurant()
 # pyana_vishnya_info.describe_restaurant()
-
+#
 # my_restaurant.number_served = 20
 # my_restaurant.check_number_served()
-
+#
 # restaurant.set_number_served(15)
 # restaurant.check_number_served()
 #
