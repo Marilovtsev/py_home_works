@@ -1,3 +1,6 @@
+"""Последняя версия класса Restaurant"""
+
+
 class Restaurant:
     def __init__(self, restaurant_name, cuisine_type):
         self.restaurant_name = restaurant_name
@@ -5,9 +8,8 @@ class Restaurant:
         self.number_served = 0
 
     def describe_restaurant(self):
-        restourant_name = f"\n{self.restaurant_name}, {self.cuisine_type}"
-        return restourant_name.title()
-        # print(f"\n{self.restaurant_name}, {self.cuisine_type}")
+        msg = self.restaurant_name + " serves wonderful " + self.cuisine_type + "."
+        print("\n" + msg)
 
     def open_restaurant(self):
         print(f"Today the {self.restaurant_name} with {self.cuisine_type} is open!")
@@ -22,23 +24,23 @@ class Restaurant:
     #     self.number_served += guests
 
 
-class IceCreamStand(Restaurant):
-    def __init__(self, restaurant_name, cuisine_type):
-        super().__init__(restaurant_name, cuisine_type)
-        self.flavors = []
-
-    def show_icecream(self):
-        print("\nWe have the following flavors available:")
-        for flavor in self.flavors:
-            print("- " + flavor.title())
-
-
-icecream_stand = IceCreamStand('Zori', 'Family cuisine')
-# print(icecream_stand.describe_restaurant())
-icecream_stand.flavors = ['vanilla', 'chocolate', 'black cherry']
-
-icecream_stand.describe_restaurant()
-icecream_stand.show_icecream()
+# class IceCreamStand(Restaurant):
+#     def __init__(self, restaurant_name, cuisine_type):
+#         super().__init__(restaurant_name, cuisine_type)
+#         self.flavors = []
+#
+#     def show_icecream(self):
+#         print("\nWe have the following flavors available:")
+#         for flavor in self.flavors:
+#             print("- " + flavor.title())
+#
+#
+# icecream_stand = IceCreamStand('Zori', 'Family cuisine')
+# # print(icecream_stand.describe_restaurant())
+# icecream_stand.flavors = ['vanilla', 'chocolate', 'black cherry']
+#
+# # icecream_stand.describe_restaurant()
+# icecream_stand.show_icecream()
 
 # my_restaurant = Restaurant("Traktor Burger", "BBQ")
 # my_restaurant.describe_restaurant()
