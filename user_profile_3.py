@@ -1,3 +1,6 @@
+"""Набор классов для профиля User"""
+
+
 class User:
     def __init__(self, first_name, last_name, age, email):
         self.first_name = first_name
@@ -25,6 +28,15 @@ class User:
         self.login_attempts = 0
 
 
+class Admin(User):
+
+    def __init__(self, first_name, last_name, age, email):
+        super().__init__(first_name, last_name, age, email)
+
+        # Initialize an empty set of privileges.
+        self.privileges = Privileges([])
+
+
 class Privileges():
     def __init__(self, privileges=''):
         self.privileges = privileges
@@ -38,16 +50,9 @@ class Privileges():
             print(priveleg)
 
 
-class Admin(User):
-    privileges = Privileges()
-
-    def __init__(self, first_name, last_name, age, email):
-        super().__init__(first_name, last_name, age, email)
-
-
-admin = Admin("John", "Shepard", 27, "shepard@normandy.com")
-admin.describe_user()
-admin.privileges.show_privileges()
+# admin = Admin("John", "Shepard", 27, "shepard@normandy.com")
+# admin.describe_user()
+# admin.privileges.show_privileges()
 
 # user_1 = User("John", "Shepard", 27, "shepard@normandy.com")
 # user_2 = User("Liara", "T'Soni", 435, "liara@normandy.com")
