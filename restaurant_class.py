@@ -1,4 +1,4 @@
-from Restaurant import Restaurant
+from restaurant import Restaurant
 
 my_restaurant = Restaurant('HopHey', 'Bear Shop')
 my_restaurant.describe_restaurant()
