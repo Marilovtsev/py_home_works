@@ -34,7 +34,7 @@ class Admin(User):
         super().__init__(first_name, last_name, age, email)
 
         # Initialize an empty set of privileges.
-        self.privileges = Privileges([])
+        self.privileges = Privileges()
 
 
 class Privileges():
