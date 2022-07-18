@@ -26,3 +26,12 @@ for roll_num in range(10):
     results.append(result)
 print("\n10 rolls of a 10-sided die:")
 print(results)
+
+d20 = Die(sides=20)
+
+results = []
+for roll_num in range(10):
+    result = d20.roll_die()
+    results.append(result)
+print("\n10 rolls of a 20-sided die:")
+print(results)
