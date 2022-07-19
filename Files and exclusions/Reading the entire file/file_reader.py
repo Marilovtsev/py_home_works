@@ -5,7 +5,7 @@ with open(filename) as file_object:
 
 pi_string = ''
 for line in lines:
-    pi_string += line.strip()
+    pi_string += line
 
 print(pi_string)
 print(len(pi_string))
