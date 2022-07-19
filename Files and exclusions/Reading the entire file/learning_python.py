@@ -10,20 +10,22 @@ class ReadFile:
         self.notes = notes
 
     def read_all(self):
-        print(self.notes)
+        print(f"--- Чтение всего содержимого файла: \n{self.notes}")
 
     @staticmethod
     def read_all_by_lines():
+        print("\n--- Чтение с перебором строк объекта файла: ")
         with open(filename) as python_lines:
             for line in python_lines:
-                print(line)
+                print(line.rstrip())
 
     @staticmethod
     def lines_in_list():
+        print("\n--- Сохранение строк в списке:")
         with open(filename) as python_list:
             lines = python_list.readlines()
         for string in lines:
-            print(string)
+            print(string.rstrip())
 
 
 notes_1 = ReadFile(notes_all)
