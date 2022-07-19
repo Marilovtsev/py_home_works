@@ -3,7 +3,7 @@ with open(filename) as python_notes:
     notes_all = python_notes.read()
 
 
-class ReadAll():
+class ReadFile():
     """Инициализирует атрибут notes"""
 
     def __init__(self, notes):
@@ -13,5 +13,5 @@ class ReadAll():
         print(self.notes)
 
 
-notes_1 = ReadAll(notes_all)
+notes_1 = ReadFile(notes_all)
 notes_1.read_all()
