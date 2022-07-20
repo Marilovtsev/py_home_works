@@ -27,6 +27,12 @@ class ReadFile:
         for string in lines:
             print(string.rstrip())
 
+    @staticmethod
+    def replace_word():
+        print("\n--- Изменение Python на C#:")
+        replace_notes = notes_all.replace('Python', 'C#')
+        print(replace_notes)
+
 
 notes_1 = ReadFile(notes_all)
 notes_1.read_all()
@@ -36,3 +42,6 @@ notes_2.read_all_by_lines()
 
 notes_3 = ReadFile(notes_all)
 notes_3.lines_in_list()
+
+notes_4 = ReadFile(notes_all)
+notes_4.replace_word()
